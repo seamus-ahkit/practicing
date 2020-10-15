@@ -1,27 +1,39 @@
-header, .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: red;
-  color: grey;
+* {
+    margin: 0%;
+    padding: 0%;
 }
 
-header button, .contact button {
-  background: blue;
+.div1{
+    background: green;
 }
 
-header button:hover, .contact button:hover {
-  background: lightblue;
+.div2{
+    background:blue;
 }
-/*# sourceMappingURL=style.css.map */
+
+.div3{
+    background:red;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 60% 60%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "div1 div2 div3"
+    "div1 div2 div3"
+    "div1 div2 div3";
+}
+
+.div1 {
+    grid-area: div1;
+}
+
+.div2 {
+    grid-area: div2;
+}
+
+.div3 {
+    grid-area: div3;
+}
